@@ -1,6 +1,7 @@
 package net.ibeetle.darkness_unleashed.item;
 
 import net.ibeetle.darkness_unleashed.DarknessUnleashedMod;
+import net.ibeetle.darkness_unleashed.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -19,6 +20,7 @@ public class ModCreativeModTabs {
                     .title(Component.translatable("creativetab.darkness_unleashed_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.RUNE_OF_DARKNESS.get());
+                        pOutput.accept(ModBlocks.RUNE_FORGE_BLOCK.get());
                     })
                     .build());
 

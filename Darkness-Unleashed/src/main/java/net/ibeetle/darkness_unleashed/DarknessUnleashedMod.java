@@ -1,6 +1,7 @@
 package net.ibeetle.darkness_unleashed;
 
 import com.mojang.logging.LogUtils;
+import net.ibeetle.darkness_unleashed.block.ModBlocks;
 import net.ibeetle.darkness_unleashed.item.ModCreativeModTabs;
 import net.ibeetle.darkness_unleashed.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -31,6 +32,9 @@ public class DarknessUnleashedMod
 
         // Register creative mod tab
         ModCreativeModTabs.register(modEventBus);
+
+        // Register blocks
+        ModBlocks.register(modEventBus);
 
         // Register mod items
         ModItems.register(modEventBus);
