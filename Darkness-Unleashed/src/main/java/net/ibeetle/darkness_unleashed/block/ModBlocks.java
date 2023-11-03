@@ -21,7 +21,11 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, DarknessUnleashedMod.MODID);
 
     public static final RegistryObject<Block> RUNE_FORGE_BLOCK = registerBlock("rune_forge_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.ANVIL))); //TODO: change behaviour using .of
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANVIL).sound(SoundType.ANVIL))); //TODO: change behaviour using .of
+    public static final RegistryObject<Block> UMBRALITE_BLOCK = registerBlock("umbralite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.ANCIENT_DEBRIS)));
+    public static final RegistryObject<Block> RAW_UMBRALITE_BLOCK = registerBlock("raw_umbralite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.STONE)));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

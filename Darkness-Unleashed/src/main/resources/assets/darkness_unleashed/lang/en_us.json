@@ -3,6 +3,8 @@
   "item.darkness_unleashed.umbralite": "Umbralite",
 
   "block.darkness_unleashed.rune_forge_block": "Rune Forge",
+  "block.darkness_unleashed.umbralite_block": "Umbralite Block",
+  "block.darkness_unleashed.raw_umbralite_block": "Umbralite Ore",
 
-  "creativetab.darkness_unleashed_tab": "Darkness Unleashed Tab"
+  "creativetab.darkness_unleashed_tab": "Darkness Unleashed"
 }

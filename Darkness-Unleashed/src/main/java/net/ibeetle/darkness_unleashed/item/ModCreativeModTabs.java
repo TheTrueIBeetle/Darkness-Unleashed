@@ -19,8 +19,14 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.RUNE_OF_DARKNESS.get()))
                     .title(Component.translatable("creativetab.darkness_unleashed_tab"))
                     .displayItems((pParameters, pOutput) -> {
+                        //Items
                         pOutput.accept(ModItems.RUNE_OF_DARKNESS.get());
+                        pOutput.accept(ModItems.UMBRALITE.get());
+
+                        //Blocks
                         pOutput.accept(ModBlocks.RUNE_FORGE_BLOCK.get());
+                        pOutput.accept(ModBlocks.UMBRALITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_UMBRALITE_BLOCK.get());
                     })
                     .build());
 

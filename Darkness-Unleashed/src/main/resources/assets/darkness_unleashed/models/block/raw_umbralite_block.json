@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "darkness_unleashed:block/raw_umbralite_block"
+  }
+}
