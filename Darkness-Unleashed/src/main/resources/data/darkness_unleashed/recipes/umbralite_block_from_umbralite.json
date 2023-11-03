@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "darkness_unleashed:umbralite"
+    }
+  },
+  "result": {
+    "item": "darkness_unleashed:umbralite_block"
+  }
+}

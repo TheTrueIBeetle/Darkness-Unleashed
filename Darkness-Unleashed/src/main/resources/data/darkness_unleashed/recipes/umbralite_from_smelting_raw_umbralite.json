@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.7,
+  "group": "umbralite",
+  "ingredient": {
+    "item": "darkness_unleashed:raw_umbralite"
+  },
+  "result": "darkness_unleashed:umbralite"
+}

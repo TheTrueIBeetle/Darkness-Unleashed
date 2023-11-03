@@ -60,6 +60,7 @@ public class DarknessUnleashedMod
         if (event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
             event.accept(ModItems.RUNE_OF_DARKNESS);
             event.accept(ModItems.UMBRALITE);
+            event.accept(ModItems.RAW_UMBRALITE);
         }
     }
 
