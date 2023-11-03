@@ -2,10 +2,12 @@ package net.ibeetle.darkness_unleashed.block;
 
 import net.ibeetle.darkness_unleashed.DarknessUnleashedMod;
 import net.ibeetle.darkness_unleashed.item.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -25,7 +27,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> UMBRALITE_BLOCK = registerBlock("umbralite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.ANCIENT_DEBRIS)));
     public static final RegistryObject<Block> RAW_UMBRALITE_BLOCK = registerBlock("raw_umbralite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).sound(SoundType.STONE)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.STONE).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> UMBRALITE_ORE = registerBlock("umbralite_ore",
+            () -> new DropExperienceBlock(BlockBehaviour.Properties.copy(Blocks.STONE)
+                    .strength(2f).requiresCorrectToolForDrops(), UniformInt.of(3, 6))); //TODO: change numbers
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

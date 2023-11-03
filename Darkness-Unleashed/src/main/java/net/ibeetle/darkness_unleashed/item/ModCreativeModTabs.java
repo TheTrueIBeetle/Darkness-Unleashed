@@ -22,11 +22,13 @@ public class ModCreativeModTabs {
                         //Items
                         pOutput.accept(ModItems.RUNE_OF_DARKNESS.get());
                         pOutput.accept(ModItems.UMBRALITE.get());
+                        pOutput.accept(ModItems.RAW_UMBRALITE.get());
 
                         //Blocks
                         pOutput.accept(ModBlocks.RUNE_FORGE_BLOCK.get());
                         pOutput.accept(ModBlocks.UMBRALITE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_UMBRALITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.UMBRALITE_ORE.get());
                     })
                     .build());
 
