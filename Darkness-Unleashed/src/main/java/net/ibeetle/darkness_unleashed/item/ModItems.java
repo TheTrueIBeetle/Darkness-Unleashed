@@ -12,6 +12,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, DarknessUnleashedMod.MODID);
 
     public static final RegistryObject<Item> RUNE_OF_DARKNESS = ITEMS.register("rune_of_darkness", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> UMBRALITE = ITEMS.register("umbralite", () -> new Item(new Item.Properties()));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
